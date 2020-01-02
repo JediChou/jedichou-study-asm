@@ -90,3 +90,16 @@ std_map <address>          - Displays a std::map<>
 str <address>              - Displays ANSI_STRING or OEM_STRING
 ustr <address>             - Displays UNICODE_STRING
 ```
+
+## WinDbg Preview - How to debug dotnet standard 4.0 console program
+
+* Already execute '.load \Microsoft.NET\Framework\v4.0.30319\sos.dll'.
+* I get an error when click F5.
+* Same errors pop when click Step Out, Step Into, Step Over.
+
+```text
+0:000> g
+Unable to insert breakpoint 0 at 00da0001, Win32 error 0n998
+    "内存位置访问无效。"
+bp0 at 00da0001 failed
+```
